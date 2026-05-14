@@ -325,6 +325,12 @@ p {
   font-weight: 800;
 }
 
+body[data-theme="light"] .notice {
+  border-color: rgba(138, 91, 0, 0.24);
+  background: rgba(255, 209, 102, 0.22);
+  color: #7a4d00;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
