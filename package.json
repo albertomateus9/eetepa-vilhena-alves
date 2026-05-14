@@ -1,0 +1,19 @@
+{
+  "name": "eetepa-vilhena-alves",
+  "version": "0.1.0",
+  "description": "Site estático premium demonstrativo para a EETEPA Vilhena Alves.",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 5180",
+    "smoke": "node tools/smoke.mjs"
+  },
+  "keywords": [
+    "eetepa",
+    "html",
+    "css",
+    "javascript",
+    "github-pages",
+    "educacao-tecnologica"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061226" />
+    <meta name="description" content="Áreas formativas demonstrativas da EETEPA Vilhena Alves: informática, redes, dados, robótica e maker." />
+    <title>Cursos | EETEPA Vilhena Alves</title>
+    <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="./"><img src="assets/site-icon.svg" alt="" /><span><strong>EETEPA Vilhena Alves</strong><span>Demo tecnológica não oficial</span></span></a>
+        <button class="menu-button" data-menu-button type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" data-nav-links aria-label="Navegação principal">
+          <a href="index.html" data-page-link>Início</a>
+          <a href="cursos.html" data-page-link>Cursos</a>
+          <a href="laboratorios.html" data-page-link>Laboratórios</a>
+          <a href="projetos.html" data-page-link>Projetos</a>
+          <a href="contato.html" data-page-link>Contato</a>
+          <button class="nav-button" data-theme-toggle type="button">Alto contraste</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="label">Cursos e trilhas</p>
+            <h1>Formação para tecnologia real</h1>
+          </div>
+          <p class="lead">Cards demonstrativos organizam áreas que dialogam com informática, redes, ciência de dados, robótica e cultura maker.</p>
+        </div>
+
+        <div class="filter-row" data-filter-group="[data-course-card]">
+          <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-button" type="button" data-filter="software">Software</button>
+          <button class="filter-button" type="button" data-filter="redes">Redes</button>
+          <button class="filter-button" type="button" data-filter="maker">Maker</button>
+          <button class="filter-button" type="button" data-filter="dados">Dados</button>
+        </div>
+
+        <div class="grid section">
+          <article class="card" data-course-card data-tags="software">
+            <span class="icon">HTML</span>
+            <h3>Informática e Web</h3>
+            <p>Fundamentos de computadores, lógica, HTML, CSS, JavaScript e publicação de páginas no GitHub Pages.</p>
+            <div class="tag-row"><span class="tag">HTML/CSS/JS</span><span class="tag">GitHub</span></div>
+          </article>
+          <article class="card" data-course-card data-tags="redes">
+            <span class="icon">IP</span>
+            <h3>Redes de Computadores</h3>
+            <p>Endereçamento, conectividade, Wi-Fi, monitoramento, segurança básica e documentação de infraestrutura.</p>
+            <div class="tag-row"><span class="tag">TCP/IP</span><span class="tag">Wi-Fi</span></div>
+          </article>
+          <article class="card" data-course-card data-tags="dados software">
+            <span class="icon">DB</span>
+            <h3>Ciência de Dados</h3>
+            <p>Planilhas, Python, limpeza de dados, visualização, amostras seguras e leitura crítica de indicadores públicos.</p>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">Dados</span></div>
+          </article>
+          <article class="card" data-course-card data-tags="maker">
+            <span class="icon">BOT</span>
+            <h3>Robótica Educacional</h3>
+            <p>Montagem, sensores, programação criativa e desafios práticos para aprendizagem mão na massa.</p>
+            <div class="tag-row"><span class="tag">Arduino</span><span class="tag">Sensores</span></div>
+          </article>
+          <article class="card" data-course-card data-tags="maker">
+            <span class="icon">3D</span>
+            <h3>Modelagem e Impressão 3D</h3>
+            <p>Prototipagem, desenho digital, fabricação e iteração de soluções no ambiente maker.</p>
+            <div class="tag-row"><span class="tag">Prototipagem</span><span class="tag">Maker</span></div>
+          </article>
+          <article class="card" data-course-card data-tags="software dados">
+            <span class="icon">IA</span>
+            <h3>Tecnologias Emergentes</h3>
+            <p>Uso crítico de IA, IoT, automação e ferramentas digitais para resolver problemas locais.</p>
+            <div class="tag-row"><span class="tag">IA aplicada</span><span class="tag">IoT</span></div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p><a class="button-ghost" href="contato.html">Contato demonstrativo</a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

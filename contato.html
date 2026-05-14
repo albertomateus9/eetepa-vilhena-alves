@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#061226" />
+    <meta name="description" content="Contato demonstrativo, localização pública e fontes usadas para a demo não oficial da EETEPA Vilhena Alves." />
+    <title>Contato | EETEPA Vilhena Alves</title>
+    <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="./"><img src="assets/site-icon.svg" alt="" /><span><strong>EETEPA Vilhena Alves</strong><span>Demo tecnológica não oficial</span></span></a>
+        <button class="menu-button" data-menu-button type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" data-nav-links aria-label="Navegação principal">
+          <a href="index.html" data-page-link>Início</a>
+          <a href="cursos.html" data-page-link>Cursos</a>
+          <a href="laboratorios.html" data-page-link>Laboratórios</a>
+          <a href="projetos.html" data-page-link>Projetos</a>
+          <a href="contato.html" data-page-link>Contato</a>
+          <button class="nav-button" data-theme-toggle type="button">Alto contraste</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div><p class="label">Contato demonstrativo</p><h1>Localização e fontes públicas</h1></div>
+            <p class="lead">Esta página não envia mensagens para a instituição. O formulário é apenas uma simulação local para demonstrar interação em JavaScript.</p>
+          </div>
+
+          <div class="grid two">
+            <article class="contact-card map-panel">
+              <h2>Como chegar</h2>
+              <p data-address>Av. Gov. Magalhães Barata, 698 - São Brás, Belém - PA</p>
+              <div class="map-lines" aria-hidden="true"></div>
+              <div class="actions"><button class="button" type="button" data-copy-address>Copiar endereço</button><a class="button-secondary" href="https://www.google.com/maps/search/?api=1&query=Av.%20Gov.%20Magalh%C3%A3es%20Barata%20698%20S%C3%A3o%20Br%C3%A1s%20Bel%C3%A9m%20PA">Abrir mapa</a></div>
+            </article>
+            <article class="contact-card">
+              <h2>Enviar interesse</h2>
+              <p>Simulação local: nada é enviado para servidor.</p>
+              <form class="form" data-local-form>
+                <label>Nome demonstrativo<input name="nome" autocomplete="name" required placeholder="Ex.: Professor visitante" /></label>
+                <label>Área de interesse<select name="area"><option>Informática</option><option>Redes</option><option>Ciência de Dados</option><option>Laboratório Maker</option></select></label>
+                <label>Mensagem<textarea name="mensagem" placeholder="Escreva uma mensagem demonstrativa"></textarea></label>
+                <button class="button" type="submit">Enviar interesse</button>
+              </form>
+              <p class="form-status" data-form-status hidden></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div><p class="label">Fontes públicas</p><h2>Base factual usada na demo</h2></div>
+            <p>Os links abaixo são usados como referência pública; o site não copia documentos internos nem usa dados de estudantes.</p>
+          </div>
+          <div class="source-list">
+            <article class="source-card"><span class="source-tag">Agência Pará</span><h3>Certificação no Laboratório Maker</h3><p>Notícia sobre certificação de estudantes em cursos realizados no Laboratório Maker da EETEPA Vilhena Alves.</p><a href="https://agenciapara.com.br/noticia/74342/sectet-certifica-alunos-dos-cursos-de-informatica-e-robotica-na-eetepa-vilhena-alves">Abrir fonte</a></article>
+            <article class="source-card"><span class="source-tag">Agência Pará</span><h3>Caravana de Ciência e Tecnologia</h3><p>Registro público de atividades de inovação e aprendizagem em Belém, com endereço da EETEPA Vilhena Alves.</p><a href="https://agenciapara.com.br/pauta/11235/inovacao-e-aprendizado-marcam-a-caravana-de-ciencia-e-tecnologia-em-belem">Abrir fonte</a></article>
+            <article class="source-card"><span class="source-tag">Agência Pará</span><h3>Educação técnica no Pará</h3><p>Contexto público sobre oferta de educação técnica e tecnológica pela rede estadual.</p><a href="https://www.agenciapara.com.br/noticia/63186/estado-oferta-educacao-tecnica-e-tecnologica-para-mais-de-26-mil-alunos-no-para-2024">Abrir fonte</a></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p><a class="button-ghost" href="index.html">Voltar ao início</a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

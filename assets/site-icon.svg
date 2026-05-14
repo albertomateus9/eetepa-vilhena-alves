@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">EETEPA Vilhena Alves</title>
+  <defs>
+    <linearGradient id="g" x1="80" x2="432" y1="72" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16f4a4" />
+      <stop offset="0.52" stop-color="#2cb8ff" />
+      <stop offset="1" stop-color="#7c5cff" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#07152f" />
+  <path d="M96 334V182l160-76 160 76v152" fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" />
+  <path d="M146 334h220M176 242h160M176 292h160" stroke="#f6fbff" stroke-linecap="round" stroke-width="22" />
+  <path d="M126 374h260" stroke="#16f4a4" stroke-linecap="round" stroke-width="24" />
+  <circle cx="256" cy="106" r="24" fill="#16f4a4" />
+</svg>
