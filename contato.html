@@ -26,32 +26,52 @@
     </header>
 
     <main>
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <div><p class="label">Contato demonstrativo</p><h1>Localização e fontes públicas</h1></div>
-            <p class="lead">Esta página não envia mensagens para a instituição. O formulário é apenas uma simulação local para demonstrar interação em JavaScript.</p>
+      <section class="section contact-hero">
+        <div class="container section-head">
+          <div>
+            <p class="label">Transparência da demo</p>
+            <h1>Localização pública, fontes abertas e formulário sem envio.</h1>
           </div>
+          <p class="lead">Esta página não envia mensagens para a instituição. O formulário é apenas uma simulação local para demonstrar interação em JavaScript.</p>
+        </div>
+      </section>
 
-          <div class="grid two">
-            <article class="contact-card map-panel">
-              <h2>Como chegar</h2>
-              <p data-address>Av. Gov. Magalhães Barata, 698 - São Brás, Belém - PA</p>
-              <div class="map-lines" aria-hidden="true"></div>
-              <div class="actions"><button class="button" type="button" data-copy-address>Copiar endereço</button><a class="button-secondary" href="https://www.google.com/maps/search/?api=1&query=Av.%20Gov.%20Magalh%C3%A3es%20Barata%20698%20S%C3%A3o%20Br%C3%A1s%20Bel%C3%A9m%20PA">Abrir mapa</a></div>
-            </article>
-            <article class="contact-card">
-              <h2>Enviar interesse</h2>
-              <p>Simulação local: nada é enviado para servidor.</p>
-              <form class="form" data-local-form>
-                <label>Nome demonstrativo<input name="nome" autocomplete="name" required placeholder="Ex.: Professor visitante" /></label>
-                <label>Área de interesse<select name="area"><option>Cursos integrados</option><option>Cursos subsequentes</option><option>Laboratório Maker</option><option>Projetos educacionais</option><option>Visita técnica demonstrativa</option></select></label>
-                <label>Mensagem<textarea name="mensagem" placeholder="Escreva uma mensagem demonstrativa"></textarea></label>
-                <button class="button" type="submit">Enviar interesse</button>
-              </form>
-              <p class="form-status" data-form-status hidden></p>
-            </article>
+      <section class="section compact-section">
+        <div class="container grid two contact-layout">
+          <article class="contact-card map-panel">
+            <h2>Como chegar</h2>
+            <p data-address>Av. Gov. Magalhães Barata, 698 - São Brás, Belém - PA</p>
+            <div class="map-lines" aria-hidden="true"></div>
+            <div class="actions">
+              <button class="button" type="button" data-copy-address>Copiar endereço</button>
+              <a class="button-secondary" href="https://www.google.com/maps/search/?api=1&query=Av.%20Gov.%20Magalh%C3%A3es%20Barata%20698%20S%C3%A3o%20Br%C3%A1s%20Bel%C3%A9m%20PA">Abrir mapa</a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <h2>Enviar interesse</h2>
+            <p>Simulação local: nada é enviado para servidor, API, banco de dados ou canal institucional.</p>
+            <form class="form" data-local-form>
+              <label>Nome demonstrativo<input name="nome" autocomplete="name" required placeholder="Ex.: Professor visitante" /></label>
+              <label>Área de interesse<select name="area"><option>Cursos integrados</option><option>Cursos subsequentes</option><option>Laboratório Maker</option><option>Projetos educacionais</option><option>Visita técnica demonstrativa</option></select></label>
+              <label>Mensagem<textarea name="mensagem" placeholder="Escreva uma mensagem demonstrativa"></textarea></label>
+              <button class="button" type="submit">Enviar interesse</button>
+            </form>
+            <p class="form-status" data-form-status hidden></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact-section">
+        <div class="container transparency-panel">
+          <div>
+            <p class="label">Política de dados</p>
+            <h2>O portal é estático e foi desenhado para ser seguro por padrão.</h2>
           </div>
+          <ul>
+            <li>Não há login, backend, banco de dados, envio de formulário ou coleta de dados.</li>
+            <li>Não há dados reais de estudantes, avaliações internas, documentos privados ou arquivos locais.</li>
+            <li>O logo fornecido pelo usuário é usado somente nesta demo não oficial, sempre com aviso de transparência.</li>
+          </ul>
         </div>
       </section>
 
@@ -59,7 +79,7 @@
         <div class="container">
           <div class="section-head">
             <div><p class="label">Fontes públicas</p><h2>Base factual usada na demo</h2></div>
-            <p>Os links abaixo são usados como referência pública; o site não copia documentos internos nem usa dados de estudantes.</p>
+            <p>Os links abaixo são referências públicas; o site não copia documentos internos nem usa dados de estudantes.</p>
           </div>
           <div class="source-list">
             <article class="source-card"><span class="source-tag">Agência Pará</span><h3>Certificação no Laboratório Maker</h3><p>Notícia sobre certificação de estudantes em cursos realizados no Laboratório Maker da EETEPA Vilhena Alves.</p><a href="https://agenciapara.com.br/noticia/74342/sectet-certifica-alunos-dos-cursos-de-informatica-e-robotica-na-eetepa-vilhena-alves">Abrir fonte</a></article>
@@ -70,7 +90,12 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div><a class="button-ghost" href="index.html">Voltar ao início</a></div></footer>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div>
+        <a class="button-ghost" href="index.html">Voltar ao início</a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

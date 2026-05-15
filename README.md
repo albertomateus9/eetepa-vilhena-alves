@@ -1,6 +1,6 @@
 # EETEPA Vilhena Alves
 
-Site estático premium em Português-BR para apresentar, como **demo não oficial**, uma visão tecnológica da EETEPA Vilhena Alves.
+Site estático premium em Português-BR para apresentar, como **demo não oficial**, uma visão institucional-tecnológica da EETEPA Vilhena Alves.
 
 **Demo:** https://albertomateus9.github.io/eetepa-vilhena-alves/
 
@@ -8,15 +8,15 @@ Site estático premium em Português-BR para apresentar, como **demo não oficia
 
 ## Visão Geral
 
-O site usa HTML, CSS e JavaScript puro, sem backend, login, banco de dados ou envio de formulários. A proposta visual combina identidade da EETEPA Vilhena Alves, campus tecnológico amazônico, cultura maker, ensino técnico e portfólio educacional.
+O site usa HTML, CSS e JavaScript puro, sem backend, login, banco de dados ou envio de formulários. A versão atual reforça três camadas: impacto territorial, laboratório maker e transparência pública. A inspiração visual é institucional, tecnológica e acessível, sem copiar textos, layouts ou imagens de sites de referência.
 
 ## Páginas
 
-- `index.html`: portal inicial com logo, chamada institucional, contadores e acesso rápido às modalidades.
-- `cursos.html`: vitrine completa com 14 cursos, filtros por modalidade/eixo e ementas resumidas.
-- `laboratorios.html`: cultura maker conectada aos cursos técnicos e às práticas de prototipagem.
-- `projetos.html`: ideias de projetos educacionais por eixo técnico.
-- `contato.html`: localização pública, fontes e formulário local demonstrativo.
+- `index.html`: portal inicial com manifesto, eixos formativos, modalidades e faixa de transparência.
+- `cursos.html`: catálogo com 14 cursos, filtros por modalidade/eixo, ementas resumidas e trilhas de projeto.
+- `laboratorios.html`: ecossistema maker com fluxo desafio, protótipo, evidência e portfólio.
+- `projetos.html`: vitrine de projetos educacionais por eixo técnico.
+- `contato.html`: localização pública, política de dados, fontes e formulário local demonstrativo.
 
 ## Cursos Listados
 

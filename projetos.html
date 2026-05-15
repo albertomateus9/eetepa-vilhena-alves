@@ -25,35 +25,99 @@
       </div>
     </header>
 
-    <main class="section">
-      <div class="container">
-        <div class="section-head">
-          <div><p class="label">Vitrine aplicada</p><h1>Projetos por eixo técnico</h1></div>
-          <p class="lead">Ideias demonstrativas para transformar cursos em produtos digitais, protótipos, relatórios e experiências públicas seguras.</p>
+    <main>
+      <section class="section project-hero">
+        <div class="container project-intro">
+          <div>
+            <p class="label">Vitrine aplicada</p>
+            <h1>Projetos por eixo técnico, prontos para virar portfólio.</h1>
+          </div>
+          <p class="lead">Ideias demonstrativas para transformar cursos em produtos digitais, protótipos, relatórios e experiências públicas seguras, com status didático e alinhamento por área.</p>
         </div>
+      </section>
 
-        <div class="filter-row" data-filter-group="[data-project-card]">
-          <button class="filter-button active" type="button" data-filter="todos">Todos</button>
-          <button class="filter-button" type="button" data-filter="web">Web</button>
-          <button class="filter-button" type="button" data-filter="redes">Redes</button>
-          <button class="filter-button" type="button" data-filter="dados">Dados</button>
-          <button class="filter-button" type="button" data-filter="maker">Maker</button>
-          <button class="filter-button" type="button" data-filter="gestao">Gestão</button>
-          <button class="filter-button" type="button" data-filter="sustentabilidade">Sustentabilidade</button>
-        </div>
+      <section class="section compact-section">
+        <div class="container">
+          <div class="filter-row project-filters" data-filter-group="[data-project-card]">
+            <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+            <button class="filter-button" type="button" data-filter="web">Web</button>
+            <button class="filter-button" type="button" data-filter="redes">Redes</button>
+            <button class="filter-button" type="button" data-filter="dados">Dados</button>
+            <button class="filter-button" type="button" data-filter="maker">Maker</button>
+            <button class="filter-button" type="button" data-filter="gestao">Gestão</button>
+            <button class="filter-button" type="button" data-filter="sustentabilidade">Sustentabilidade</button>
+          </div>
 
-        <div class="grid section">
-          <article class="card" data-project-card data-tags="web gestao"><span class="icon">WEB</span><h3>Portal de curso no GitHub Pages</h3><p>Site estático para apresentar um curso, publicar trabalhos e organizar evidências de aprendizagem.</p><div class="tag-row"><span class="tag">Informática</span><span class="tag">GitHub Pages</span></div></article>
-          <article class="card" data-project-card data-tags="redes maker"><span class="icon">NOC</span><h3>Painel NOC estudantil</h3><p>Simulação de disponibilidade, latência, ativos, chamados e alertas para aulas de redes.</p><div class="tag-row"><span class="tag">Redes</span><span class="tag">Infraestrutura</span></div></article>
-          <article class="card" data-project-card data-tags="dados sustentabilidade"><span class="icon">CSV</span><h3>Observatório de dados ambientais</h3><p>Dados públicos e sintéticos para analisar queimadas, energia, resíduos e indicadores locais.</p><div class="tag-row"><span class="tag">Ciências de Dados</span><span class="tag">Meio Ambiente</span></div></article>
-          <article class="card" data-project-card data-tags="maker sustentabilidade"><span class="icon">SOL</span><h3>Monitor de energia renovável</h3><p>Protótipo demonstrativo para estimar geração solar, consumo e economia em cenários didáticos.</p><div class="tag-row"><span class="tag">Energia</span><span class="tag">Maker</span></div></article>
-          <article class="card" data-project-card data-tags="gestao web"><span class="icon">ADM</span><h3>Gestão de evento escolar fictício</h3><p>Cronograma, orçamento sintético, checklists e landing page para eventos, turismo ou administração.</p><div class="tag-row"><span class="tag">Eventos</span><span class="tag">Administração</span></div></article>
-          <article class="card" data-project-card data-tags="gestao dados"><span class="icon">IMB</span><h3>Painel patrimonial demonstrativo</h3><p>Inventário fictício para condomínio, transações imobiliárias, patrimônio e manutenção.</p><div class="tag-row"><span class="tag">Gestão</span><span class="tag">Serviços</span></div></article>
+          <div class="project-showcase">
+            <article class="project-card-premium" data-project-card data-tags="web gestao">
+              <span class="status-pill">Demo web</span>
+              <div class="project-code">WEB</div>
+              <h3>Portal de curso no GitHub Pages</h3>
+              <p>Site estático para apresentar um curso, publicar trabalhos e organizar evidências de aprendizagem.</p>
+              <div class="tag-row"><span class="tag">Informática</span><span class="tag">GitHub Pages</span></div>
+            </article>
+            <article class="project-card-premium" data-project-card data-tags="redes maker">
+              <span class="status-pill">Simulação</span>
+              <div class="project-code">NOC</div>
+              <h3>Painel NOC estudantil</h3>
+              <p>Simulação de disponibilidade, latência, ativos, chamados e alertas para aulas de redes.</p>
+              <div class="tag-row"><span class="tag">Redes</span><span class="tag">Infraestrutura</span></div>
+            </article>
+            <article class="project-card-premium" data-project-card data-tags="dados sustentabilidade">
+              <span class="status-pill">Dados seguros</span>
+              <div class="project-code">CSV</div>
+              <h3>Observatório de dados ambientais</h3>
+              <p>Dados públicos e sintéticos para analisar queimadas, energia, resíduos e indicadores locais.</p>
+              <div class="tag-row"><span class="tag">Ciências de Dados</span><span class="tag">Meio Ambiente</span></div>
+            </article>
+            <article class="project-card-premium" data-project-card data-tags="maker sustentabilidade">
+              <span class="status-pill">Protótipo maker</span>
+              <div class="project-code">SOL</div>
+              <h3>Monitor de energia renovável</h3>
+              <p>Protótipo demonstrativo para estimar geração solar, consumo e economia em cenários didáticos.</p>
+              <div class="tag-row"><span class="tag">Energia</span><span class="tag">Maker</span></div>
+            </article>
+            <article class="project-card-premium" data-project-card data-tags="gestao web">
+              <span class="status-pill">Operação</span>
+              <div class="project-code">ADM</div>
+              <h3>Gestão de evento escolar fictício</h3>
+              <p>Cronograma, orçamento sintético, checklists e landing page para eventos, turismo ou administração.</p>
+              <div class="tag-row"><span class="tag">Eventos</span><span class="tag">Administração</span></div>
+            </article>
+            <article class="project-card-premium" data-project-card data-tags="gestao dados">
+              <span class="status-pill">Inventário</span>
+              <div class="project-code">IMB</div>
+              <h3>Painel patrimonial demonstrativo</h3>
+              <p>Inventário fictício para condomínio, transações imobiliárias, patrimônio e manutenção.</p>
+              <div class="tag-row"><span class="tag">Gestão</span><span class="tag">Serviços</span></div>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section compact-section">
+        <div class="container portfolio-path">
+          <div>
+            <p class="label">Do protótipo ao GitHub</p>
+            <h2>Cada projeto pode terminar com uma evidência pública simples.</h2>
+          </div>
+          <div class="path-steps">
+            <article><strong>1</strong><span>Definir desafio</span></article>
+            <article><strong>2</strong><span>Construir MVP</span></article>
+            <article><strong>3</strong><span>Registrar evidência</span></article>
+            <article><strong>4</strong><span>Publicar demo segura</span></article>
+          </div>
+          <a class="button" href="laboratorios.html">Ver ecossistema maker</a>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div><a class="button-ghost" href="contato.html">Como chegar</a></div></footer>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div>
+        <a class="button-ghost" href="contato.html">Como chegar</a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

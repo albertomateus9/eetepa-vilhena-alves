@@ -22,6 +22,8 @@ const css = readFileSync(join(root, "styles.css"), "utf8");
 const js = readFileSync(join(root, "script.js"), "utf8");
 
 if (!css.includes("@media")) throw new Error("CSS responsivo ausente");
+if (!css.includes("axis-board")) throw new Error("Eixos formativos sem estilo");
+if (!css.includes("project-showcase")) throw new Error("Vitrine de projetos sem estilo");
 if (!js.includes("localStorage")) throw new Error("Tema com localStorage ausente");
 if (!js.includes("clipboard")) throw new Error("Botão de copiar endereço ausente");
 if (!js.includes("data-course-toggle")) throw new Error("Cards expansíveis de cursos ausentes");
@@ -44,11 +46,25 @@ for (const page of pages) {
   }
 }
 
-const publicTextFiles = required.filter((file) => !file.startsWith(".github/") && file !== "LICENSE" && !file.endsWith(".png") && !file.endsWith(".svg"));
-const allText = publicTextFiles.map((file) => readFileSync(join(root, file), "utf8")).join("\n");
+const index = readFileSync(join(root, "index.html"), "utf8");
 const cursos = readFileSync(join(root, "cursos.html"), "utf8");
+const laboratorios = readFileSync(join(root, "laboratorios.html"), "utf8");
+const projetos = readFileSync(join(root, "projetos.html"), "utf8");
+const contato = readFileSync(join(root, "contato.html"), "utf8");
+
+for (const phrase of ["Manifesto EETEPA", "Eixos formativos", "Transparência da demo"]) {
+  if (!index.includes(phrase)) throw new Error(`Home sem bloco obrigatório: ${phrase}`);
+}
+if (!cursos.includes("Trilhas de projeto por curso")) throw new Error("Cursos sem trilhas de projeto");
+if (!laboratorios.includes("Ecossistema maker")) throw new Error("Laboratórios sem ecossistema maker");
+if (!projetos.includes("Do protótipo ao GitHub")) throw new Error("Projetos sem fluxo de portfólio");
+if (!contato.includes("Política de dados")) throw new Error("Contato sem política de dados");
+
 const courseCount = (cursos.match(/<article class="course-card/g) || []).length;
 if (courseCount !== 14) throw new Error(`Quantidade de cursos inválida: ${courseCount}`);
+const projectCount = (projetos.match(/<article class="project-card-premium/g) || []).length;
+if (projectCount !== 6) throw new Error(`Quantidade de projetos inválida: ${projectCount}`);
+
 for (const course of [
   "Técnico em Administração",
   "Técnico em Rede de Computadores",
@@ -59,6 +75,8 @@ for (const course of [
   if (!cursos.includes(course)) throw new Error(`Curso ausente: ${course}`);
 }
 
+const publicTextFiles = required.filter((file) => !file.startsWith(".github/") && file !== "LICENSE" && !file.endsWith(".png") && !file.endsWith(".svg"));
+const allText = publicTextFiles.map((file) => readFileSync(join(root, file), "utf8")).join("\n");
 const sensitive = [
   /ppl-ai-file-upload/i,
   /amazonaws/i,
@@ -66,6 +84,10 @@ const sensitive = [
   /processamento de sinais/i,
   /D:\\/i,
   /Users\\alber/i,
+  /ementa dos cursos/i,
+  /inctiamazonia/i,
+  /labcity/i,
+  /isaci/i,
   /Ã|Â|â˜|â€¢|Ã¡|Ã©|Ã§|Ã£|Ãµ/,
   /\b\d{3}\.\d{3}\.\d{3}-\d{2}\b/,
   /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i
