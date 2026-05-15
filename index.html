@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#061226" />
-    <meta name="description" content="Demo não oficial da EETEPA Vilhena Alves com visual tecnológico, cursos, laboratório maker e projetos educacionais." />
-    <title>EETEPA Vilhena Alves | Demo Tecnológica</title>
+    <meta name="description" content="Demo não oficial da EETEPA Vilhena Alves com portal tecnológico, cursos técnicos, laboratório maker e projetos educacionais." />
+    <title>EETEPA Vilhena Alves | Portal Demonstrativo</title>
     <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -13,8 +13,8 @@
     <header class="site-header">
       <div class="nav-wrap">
         <a class="brand" href="./" aria-label="Página inicial">
-          <img src="assets/site-icon.svg" alt="" />
-          <span><strong>EETEPA Vilhena Alves</strong><span>Demo tecnológica não oficial</span></span>
+          <span class="brand-mark"><img src="assets/vilhena.png" alt="EETEPA Vilhena Alves" /></span>
+          <span><strong>EETEPA Vilhena Alves</strong><span>Portal demonstrativo não oficial</span></span>
         </a>
         <button class="menu-button" data-menu-button type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
         <nav class="nav-links" data-nav-links aria-label="Navegação principal">
@@ -31,54 +31,76 @@
     <main>
       <section class="hero container">
         <div class="hero-copy">
-          <p class="label">Educação técnica, maker e digital em Belém</p>
+          <div class="hero-logo-card">
+            <img src="assets/vilhena.png" alt="Logo EETEPA Vilhena Alves" />
+            <span>Belém - Pará</span>
+          </div>
           <h1>EETEPA Vilhena Alves</h1>
-          <p class="lead">Uma página demonstrativa para apresentar a escola como ambiente de formação técnica, cultura maker, redes, informática, dados e experimentação tecnológica.</p>
+          <p class="lead">Um portal demonstrativo para apresentar cursos técnicos, cultura maker, projetos educacionais e tecnologia aplicada em uma experiência pública, responsiva e segura.</p>
           <div class="actions">
-            <a class="button" href="cursos.html">Conhecer cursos</a>
-            <a class="button-secondary" href="laboratorios.html">Explorar Laboratório Maker</a>
-            <a class="button-ghost" href="projetos.html">Ver projetos</a>
+            <a class="button" href="cursos.html#integrados">Cursos integrados</a>
+            <a class="button-secondary" href="cursos.html#subsequentes">Cursos subsequentes</a>
+            <a class="button-ghost" href="laboratorios.html">Laboratório Maker</a>
+            <a class="button-ghost" href="projetos.html">Projetos</a>
           </div>
           <p class="notice">Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p>
-          <div class="stats" aria-label="Destaques públicos">
-            <div class="stat"><strong data-count="5">0</strong><span>páginas navegáveis</span></div>
-            <div class="stat"><strong data-count="0">0</strong><span>envio de dados</span></div>
-            <div class="stat"><strong data-count="100">0</strong><span>% estático e local</span></div>
+          <div class="stats" aria-label="Resumo dos cursos">
+            <div class="stat"><strong data-count="14">0</strong><span>cursos técnicos</span></div>
+            <div class="stat"><strong data-count="6">0</strong><span>integrados ao Ensino Médio</span></div>
+            <div class="stat"><strong data-count="8">0</strong><span>subsequentes noturnos</span></div>
           </div>
         </div>
-        <div class="hero-art">
+        <div class="hero-art portal-art">
           <img src="assets/campus-tech.svg" alt="Ilustração de campus tecnológico com circuitos e laboratório maker" />
-          <span class="art-chip">Laboratório Maker • Robótica • Web • Dados</span>
+          <div class="course-orbit" aria-label="Eixos formativos">
+            <span>Gestão</span>
+            <span>Redes</span>
+            <span>Dados</span>
+            <span>Maker</span>
+          </div>
+          <span class="art-chip">Educação técnica • Inovação • Portfólio</span>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section compact-section">
         <div class="container">
           <div class="section-head">
             <div>
-              <p class="label">Visão rápida</p>
-              <h2>Um campus para aprender fazendo</h2>
+              <p class="label">Ementa organizada</p>
+              <h2>Do Ensino Médio à qualificação profissional</h2>
             </div>
-            <p>O site organiza cursos, práticas e projetos em uma experiência pública, segura e fácil de navegar, sem usar dados internos.</p>
+            <p>A vitrine de cursos foi reorganizada a partir da lista fornecida, separando modalidades e eixos para navegação clara em celular, projetor e desktop.</p>
           </div>
-          <div class="grid">
-            <article class="card">
-              <span class="icon">01</span>
-              <h3>Formação técnica</h3>
-              <p>Trilhas ligadas a informática, redes, ciência de dados, robótica e tecnologias digitais.</p>
-              <a class="button-ghost" href="cursos.html">Ver áreas</a>
+          <div class="modality-grid">
+            <article class="modality-card" id="home-integrados">
+              <span class="modality-badge">Integrados ao Ensino Médio</span>
+              <h3>6 cursos diurnos</h3>
+              <p>Formação técnica junto ao Ensino Médio, conectando base escolar, prática profissional e projetos de aprendizagem.</p>
+              <ul class="mini-list">
+                <li>Administração</li>
+                <li>Rede de Computadores</li>
+                <li>Ciências de Dados</li>
+                <li>Meio Ambiente</li>
+                <li>Informática</li>
+                <li>Sistemas de Energia Renováveis</li>
+              </ul>
+              <a class="button-secondary" href="cursos.html#integrados">Ver integrados</a>
             </article>
-            <article class="card">
-              <span class="icon">02</span>
-              <h3>Cultura maker</h3>
-              <p>Laboratório de criação com programação, prototipagem, modelagem e impressão 3D.</p>
-              <a class="button-ghost" href="laboratorios.html">Abrir laboratório</a>
-            </article>
-            <article class="card">
-              <span class="icon">03</span>
-              <h3>Projetos visíveis</h3>
-              <p>Vitrine para aulas, feiras, portfólio GitHub e experiências de aprendizagem aplicada.</p>
-              <a class="button-ghost" href="projetos.html">Explorar vitrine</a>
+            <article class="modality-card blue" id="home-subsequentes">
+              <span class="modality-badge">Subsequentes</span>
+              <h3>8 cursos noturnos</h3>
+              <p>Opções para quem já concluiu o Ensino Médio e busca qualificação técnica com foco em atuação profissional.</p>
+              <ul class="mini-list columns">
+                <li>Eventos</li>
+                <li>Guia de Turismo</li>
+                <li>Apoio Escolar</li>
+                <li>Administração</li>
+                <li>Informática</li>
+                <li>Rede de Computadores</li>
+                <li>Condomínio</li>
+                <li>Transações Imobiliárias</li>
+              </ul>
+              <a class="button-secondary" href="cursos.html#subsequentes">Ver subsequentes</a>
             </article>
           </div>
         </div>
@@ -87,16 +109,16 @@
       <section class="section">
         <div class="container grid two">
           <article class="feature">
-            <p class="label">Referência pública</p>
-            <h2>Laboratório Maker em evidência</h2>
-            <p>Notícia pública da Agência Pará registra certificações na EETEPA Vilhena Alves em cursos como Informática Básica e Avançada, Robótica e Modelagem/Impressão 3D.</p>
-            <a class="button" href="laboratorios.html">Conhecer proposta</a>
+            <p class="label">Laboratório Maker</p>
+            <h2>Aprender fazendo, documentando e publicando</h2>
+            <p>O site conecta programação, robótica, modelagem, redes, dados, sustentabilidade e gestão em desafios que podem virar portfólio público e evidência de aprendizagem.</p>
+            <a class="button" href="laboratorios.html">Explorar laboratório</a>
           </article>
           <article class="feature">
-            <p class="label">Tecnologia em sala</p>
-            <h2>Da aula ao portfólio</h2>
-            <p>A página foi desenhada para conectar escola, sala de aula, laboratório e projetos públicos, valorizando produção estudantil e práticas seguras.</p>
-            <a class="button-secondary" href="projetos.html">Ver ideias de projetos</a>
+            <p class="label">Projetos educacionais</p>
+            <h2>Da sala de aula ao GitHub Pages</h2>
+            <p>As propostas de projetos mostram como transformar cada eixo técnico em páginas, dashboards, simuladores e relatórios seguros, sem dados reais de estudantes.</p>
+            <a class="button-secondary" href="projetos.html">Ver vitrine de projetos</a>
           </article>
         </div>
       </section>
@@ -104,7 +126,10 @@
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves. Não representa canal institucional oficial.</p>
+        <div class="footer-brand">
+          <img src="assets/vilhena.png" alt="" />
+          <p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves. Não representa canal institucional oficial.</p>
+        </div>
         <a class="button-ghost" href="contato.html">Como chegar</a>
       </div>
     </footer>

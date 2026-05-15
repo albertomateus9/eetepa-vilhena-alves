@@ -12,7 +12,7 @@
   <body>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="./"><img src="assets/site-icon.svg" alt="" /><span><strong>EETEPA Vilhena Alves</strong><span>Demo tecnológica não oficial</span></span></a>
+        <a class="brand" href="./"><span class="brand-mark"><img src="assets/vilhena.png" alt="EETEPA Vilhena Alves" /></span><span><strong>EETEPA Vilhena Alves</strong><span>Portal demonstrativo não oficial</span></span></a>
         <button class="menu-button" data-menu-button type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
         <nav class="nav-links" data-nav-links aria-label="Navegação principal">
           <a href="index.html" data-page-link>Início</a>
@@ -45,7 +45,7 @@
               <p>Simulação local: nada é enviado para servidor.</p>
               <form class="form" data-local-form>
                 <label>Nome demonstrativo<input name="nome" autocomplete="name" required placeholder="Ex.: Professor visitante" /></label>
-                <label>Área de interesse<select name="area"><option>Informática</option><option>Redes</option><option>Ciência de Dados</option><option>Laboratório Maker</option></select></label>
+                <label>Área de interesse<select name="area"><option>Cursos integrados</option><option>Cursos subsequentes</option><option>Laboratório Maker</option><option>Projetos educacionais</option><option>Visita técnica demonstrativa</option></select></label>
                 <label>Mensagem<textarea name="mensagem" placeholder="Escreva uma mensagem demonstrativa"></textarea></label>
                 <button class="button" type="submit">Enviar interesse</button>
               </form>
@@ -70,7 +70,7 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-grid"><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p><a class="button-ghost" href="index.html">Voltar ao início</a></div></footer>
+    <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div><a class="button-ghost" href="index.html">Voltar ao início</a></div></footer>
     <script src="script.js"></script>
   </body>
 </html>

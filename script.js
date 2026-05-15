@@ -39,11 +39,21 @@ function setupNavigation() {
   });
 }
 
+function updateVisibleCounter(selector, countSelector) {
+  if (!countSelector) return;
+  const counter = document.querySelector(countSelector);
+  if (!counter) return;
+  const visible = [...document.querySelectorAll(selector)].filter((item) => !item.classList.contains("hidden")).length;
+  counter.textContent = visible.toLocaleString("pt-BR");
+}
+
 function setupFilters() {
   document.querySelectorAll("[data-filter-group]").forEach((group) => {
     const buttons = group.querySelectorAll("[data-filter]");
     const targetSelector = group.dataset.filterGroup;
+    const countSelector = group.dataset.filterCount;
     const items = document.querySelectorAll(targetSelector);
+    updateVisibleCounter(targetSelector, countSelector);
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
         const filter = button.dataset.filter;
@@ -53,6 +63,7 @@ function setupFilters() {
           const tags = (item.dataset.tags || "").split(" ");
           item.classList.toggle("hidden", filter !== "todos" && !tags.includes(filter));
         });
+        updateVisibleCounter(targetSelector, countSelector);
       });
     });
   });
@@ -65,6 +76,18 @@ function setupAccordions() {
       const open = !panel.classList.contains("open");
       panel.classList.toggle("open", open);
       button.setAttribute("aria-expanded", String(open));
+    });
+  });
+}
+
+function setupCourseCards() {
+  document.querySelectorAll("[data-course-toggle]").forEach((button) => {
+    const panel = document.getElementById(button.getAttribute("aria-controls"));
+    button.addEventListener("click", () => {
+      const open = !panel.classList.contains("open");
+      panel.classList.toggle("open", open);
+      button.setAttribute("aria-expanded", String(open));
+      button.textContent = open ? "Ocultar ementa" : "Ver ementa resumida";
     });
   });
 }
@@ -117,6 +140,7 @@ setupTheme();
 setupNavigation();
 setupFilters();
 setupAccordions();
+setupCourseCards();
 setupContactForm();
 setupCopyAddress();
 setupCounters();

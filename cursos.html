@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#061226" />
-    <meta name="description" content="Áreas formativas demonstrativas da EETEPA Vilhena Alves: informática, redes, dados, robótica e maker." />
+    <meta name="description" content="Vitrine demonstrativa dos cursos técnicos integrados e subsequentes da EETEPA Vilhena Alves." />
     <title>Cursos | EETEPA Vilhena Alves</title>
     <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -12,7 +12,7 @@
   <body>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="./"><img src="assets/site-icon.svg" alt="" /><span><strong>EETEPA Vilhena Alves</strong><span>Demo tecnológica não oficial</span></span></a>
+        <a class="brand" href="./"><span class="brand-mark"><img src="assets/vilhena.png" alt="EETEPA Vilhena Alves" /></span><span><strong>EETEPA Vilhena Alves</strong><span>Portal demonstrativo não oficial</span></span></a>
         <button class="menu-button" data-menu-button type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
         <nav class="nav-links" data-nav-links aria-label="Navegação principal">
           <a href="index.html" data-page-link>Início</a>
@@ -25,66 +25,188 @@
       </div>
     </header>
 
-    <main class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="label">Cursos e trilhas</p>
-            <h1>Formação para tecnologia real</h1>
+    <main>
+      <section class="section hero-lite">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="label">Cursos técnicos</p>
+              <h1>14 caminhos de formação</h1>
+            </div>
+            <p class="lead">Cursos organizados por modalidade e eixo profissional, com resumo didático para consulta pública em uma página demonstrativa.</p>
           </div>
-          <p class="lead">Cards demonstrativos organizam áreas que dialogam com informática, redes, ciência de dados, robótica e cultura maker.</p>
+          <div class="course-summary">
+            <div class="stat"><strong data-count="14">0</strong><span>cursos listados</span></div>
+            <div class="stat"><strong data-count="6">0</strong><span>integrados</span></div>
+            <div class="stat"><strong data-count="8">0</strong><span>subsequentes</span></div>
+            <div class="stat"><strong data-course-visible>14</strong><span>visíveis no filtro</span></div>
+          </div>
+          <p class="notice">Informações transcritas da lista de cursos fornecida pelo usuário. O PDF original não é publicado neste repositório.</p>
         </div>
+      </section>
 
-        <div class="filter-row" data-filter-group="[data-course-card]">
-          <button class="filter-button active" type="button" data-filter="todos">Todos</button>
-          <button class="filter-button" type="button" data-filter="software">Software</button>
-          <button class="filter-button" type="button" data-filter="redes">Redes</button>
-          <button class="filter-button" type="button" data-filter="maker">Maker</button>
-          <button class="filter-button" type="button" data-filter="dados">Dados</button>
+      <section class="section compact-section" aria-label="Filtros de cursos">
+        <div class="container">
+          <div class="filter-row sticky-filters" data-filter-group="[data-course-card]" data-filter-count="[data-course-visible]">
+            <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+            <button class="filter-button" type="button" data-filter="integrado">Integrados</button>
+            <button class="filter-button" type="button" data-filter="subsequente">Subsequentes</button>
+            <button class="filter-button" type="button" data-filter="gestao">Gestão</button>
+            <button class="filter-button" type="button" data-filter="tecnologia">Tecnologia</button>
+            <button class="filter-button" type="button" data-filter="dados">Dados</button>
+            <button class="filter-button" type="button" data-filter="sustentabilidade">Sustentabilidade</button>
+            <button class="filter-button" type="button" data-filter="servicos">Serviços/Turismo</button>
+            <button class="filter-button" type="button" data-filter="infraestrutura">Infraestrutura</button>
+          </div>
         </div>
+      </section>
 
-        <div class="grid section">
-          <article class="card" data-course-card data-tags="software">
-            <span class="icon">HTML</span>
-            <h3>Informática e Web</h3>
-            <p>Fundamentos de computadores, lógica, HTML, CSS, JavaScript e publicação de páginas no GitHub Pages.</p>
-            <div class="tag-row"><span class="tag">HTML/CSS/JS</span><span class="tag">GitHub</span></div>
-          </article>
-          <article class="card" data-course-card data-tags="redes">
-            <span class="icon">IP</span>
-            <h3>Redes de Computadores</h3>
-            <p>Endereçamento, conectividade, Wi-Fi, monitoramento, segurança básica e documentação de infraestrutura.</p>
-            <div class="tag-row"><span class="tag">TCP/IP</span><span class="tag">Wi-Fi</span></div>
-          </article>
-          <article class="card" data-course-card data-tags="dados software">
-            <span class="icon">DB</span>
-            <h3>Ciência de Dados</h3>
-            <p>Planilhas, Python, limpeza de dados, visualização, amostras seguras e leitura crítica de indicadores públicos.</p>
-            <div class="tag-row"><span class="tag">Python</span><span class="tag">Dados</span></div>
-          </article>
-          <article class="card" data-course-card data-tags="maker">
-            <span class="icon">BOT</span>
-            <h3>Robótica Educacional</h3>
-            <p>Montagem, sensores, programação criativa e desafios práticos para aprendizagem mão na massa.</p>
-            <div class="tag-row"><span class="tag">Arduino</span><span class="tag">Sensores</span></div>
-          </article>
-          <article class="card" data-course-card data-tags="maker">
-            <span class="icon">3D</span>
-            <h3>Modelagem e Impressão 3D</h3>
-            <p>Prototipagem, desenho digital, fabricação e iteração de soluções no ambiente maker.</p>
-            <div class="tag-row"><span class="tag">Prototipagem</span><span class="tag">Maker</span></div>
-          </article>
-          <article class="card" data-course-card data-tags="software dados">
-            <span class="icon">IA</span>
-            <h3>Tecnologias Emergentes</h3>
-            <p>Uso crítico de IA, IoT, automação e ferramentas digitais para resolver problemas locais.</p>
-            <div class="tag-row"><span class="tag">IA aplicada</span><span class="tag">IoT</span></div>
-          </article>
+      <section class="section compact-section" id="integrados">
+        <div class="container">
+          <div class="section-head">
+            <div><p class="label">Integrados ao Ensino Médio</p><h2>Cursos diurnos</h2></div>
+            <p>Formação técnica integrada ao Ensino Médio, com trilhas que aproximam escola, profissão, laboratório e projeto aplicado.</p>
+          </div>
+          <div class="course-grid">
+            <article class="course-card" data-course-card data-tags="integrado gestao">
+              <span class="course-mode">Integrado</span>
+              <h3>Técnico em Administração</h3>
+              <p>Forma profissionais para organização de empresas, rotinas administrativas, atendimento ao público, recursos humanos e apoio à gestão de negócios.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-admin-integrado">Ver ementa resumida</button>
+              <div class="course-details" id="curso-admin-integrado"><p>Eixo: gestão e negócios. Projetos sugeridos: plano de atendimento, dashboard financeiro fictício e fluxo de processos administrativos.</p></div>
+            </article>
+            <article class="course-card" data-course-card data-tags="integrado tecnologia infraestrutura">
+              <span class="course-mode">Integrado</span>
+              <h3>Técnico em Rede de Computadores</h3>
+              <p>Prepara para instalação, configuração e manutenção de redes, servidores, equipamentos de comunicação e segurança de redes.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-redes-integrado">Ver ementa resumida</button>
+              <div class="course-details" id="curso-redes-integrado"><p>Eixo: tecnologia e infraestrutura. Projetos sugeridos: mapa de topologia, simulador de pacotes, inventário de laboratório e painel NOC estudantil.</p></div>
+            </article>
+            <article class="course-card" data-course-card data-tags="integrado tecnologia dados">
+              <span class="course-mode">Integrado</span>
+              <h3>Técnico em Ciências de Dados</h3>
+              <p>Desenvolve competências em análise de dados, programação, estatística, organização de informações e interpretação de dados.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-dados-integrado">Ver ementa resumida</button>
+              <div class="course-details" id="curso-dados-integrado"><p>Eixo: dados e tecnologia. Projetos sugeridos: limpeza de CSV, visualização de indicadores públicos e observatório COP30/Pará com amostras seguras.</p></div>
+            </article>
+            <article class="course-card" data-course-card data-tags="integrado sustentabilidade">
+              <span class="course-mode">Integrado</span>
+              <h3>Técnico em Meio Ambiente</h3>
+              <p>Forma para preservação ambiental, gestão de resíduos, educação ambiental, sustentabilidade e monitoramento de recursos naturais.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-ambiente-integrado">Ver ementa resumida</button>
+              <div class="course-details" id="curso-ambiente-integrado"><p>Eixo: sustentabilidade. Projetos sugeridos: sensores ambientais simulados, análise de queimadas, consumo consciente e painéis de indicadores.</p></div>
+            </article>
+            <article class="course-card" data-course-card data-tags="integrado tecnologia dados">
+              <span class="course-mode">Integrado</span>
+              <h3>Técnico em Informática</h3>
+              <p>Capacita para programação, manutenção de computadores, banco de dados e sistemas, preparando para atuar na área de tecnologia da informação.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-info-integrado">Ver ementa resumida</button>
+              <div class="course-details" id="curso-info-integrado"><p>Eixo: tecnologia. Projetos sugeridos: portfólio web, páginas responsivas, validação de formulários, CMS estático e jogos didáticos.</p></div>
+            </article>
+            <article class="course-card" data-course-card data-tags="integrado sustentabilidade tecnologia infraestrutura">
+              <span class="course-mode">Integrado</span>
+              <h3>Técnico em Sistemas de Energia Renováveis</h3>
+              <p>Capacita para projetos, instalação e manutenção de sistemas de energia limpa, como solar e eólica, promovendo soluções sustentáveis.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-energia-integrado">Ver ementa resumida</button>
+              <div class="course-details" id="curso-energia-integrado"><p>Eixo: sustentabilidade e infraestrutura. Projetos sugeridos: simulador de geração solar, monitoramento energético e protótipos maker de eficiência.</p></div>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section compact-section" id="subsequentes">
+        <div class="container">
+          <div class="section-head">
+            <div><p class="label">Subsequentes</p><h2>Cursos noturnos</h2></div>
+            <p>Formações técnicas para quem já concluiu o Ensino Médio, com foco em qualificação profissional e atuação no mercado.</p>
+          </div>
+          <div class="course-grid">
+            <article class="course-card blue" data-course-card data-tags="subsequente servicos gestao">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Eventos</h3>
+              <p>Forma profissionais para planejar, organizar e executar eventos sociais, culturais, esportivos e corporativos, atuando em gestão e logística.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-eventos-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-eventos-sub"><p>Eixo: serviços e gestão. Projetos sugeridos: cronograma de evento, checklist operacional, landing page e relatório de execução.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente servicos">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Guia de Turismo</h3>
+              <p>Capacita para acompanhamento de turistas, organização de roteiros, interpretação cultural e promoção do turismo regional e nacional.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-turismo-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-turismo-sub"><p>Eixo: turismo e serviços. Projetos sugeridos: mapa de roteiro em Belém, guia digital e análise de atrativos com dados públicos.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente servicos gestao">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Apoio Escolar</h3>
+              <p>Prepara para auxiliar na organização de atividades pedagógicas, administrativas e no suporte ao ambiente escolar.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-apoio-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-apoio-sub"><p>Eixo: serviços educacionais. Projetos sugeridos: sistema de organização escolar fictício, painel de atendimentos e plano de rotina administrativa.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente gestao">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Administração</h3>
+              <p>Qualifica para rotinas administrativas, organização empresarial, atendimento, gestão financeira e processos administrativos.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-admin-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-admin-sub"><p>Eixo: gestão e negócios. Projetos sugeridos: controle de chamados, planilha inteligente, Gantt e relatório de produtividade.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente tecnologia dados">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Informática</h3>
+              <p>Desenvolve habilidades em suporte técnico, manutenção de computadores, desenvolvimento de sistemas e tecnologias digitais.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-info-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-info-sub"><p>Eixo: tecnologia. Projetos sugeridos: site institucional, assistente de carreira, chatbot FAQ e apps web locais.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente tecnologia infraestrutura">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Rede de Computadores</h3>
+              <p>Capacita para implantação, administração e manutenção de redes, comunicação de dados e infraestrutura tecnológica.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-redes-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-redes-sub"><p>Eixo: infraestrutura. Projetos sugeridos: scanner seguro com amostras, heatmap Wi-Fi, monitor de disponibilidade e documentação de rede.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente gestao servicos">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Condomínio</h3>
+              <p>Forma profissionais para administração de condomínios, gestão de recursos, atendimento a moradores e organização patrimonial.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-condominio-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-condominio-sub"><p>Eixo: gestão e serviços. Projetos sugeridos: painel de demandas, cadastro patrimonial fictício e indicadores de manutenção.</p></div>
+            </article>
+            <article class="course-card blue" data-course-card data-tags="subsequente gestao servicos">
+              <span class="course-mode">Subsequente</span>
+              <h3>Técnico em Transações Imobiliárias</h3>
+              <p>Capacita para atuar no mercado imobiliário, com conhecimentos sobre venda, locação, avaliação de imóveis e legislação aplicada.</p>
+              <button class="course-more" type="button" data-course-toggle aria-expanded="false" aria-controls="curso-imobiliarias-sub">Ver ementa resumida</button>
+              <div class="course-details" id="curso-imobiliarias-sub"><p>Eixo: negócios e serviços. Projetos sugeridos: catálogo demonstrativo de imóveis, planilha de avaliação fictícia e painel de atendimento.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container comparison-panel">
+          <div>
+            <p class="label">Comparativo rápido</p>
+            <h2>Integrado x Subsequente</h2>
+          </div>
+          <div class="compare-grid">
+            <article>
+              <h3>Integrado ao Ensino Médio</h3>
+              <p>Curso técnico junto ao percurso escolar, com aulas nos turnos da manhã e tarde, conectando formação geral e prática profissional.</p>
+            </article>
+            <article>
+              <h3>Subsequente noturno</h3>
+              <p>Curso técnico para quem já concluiu o Ensino Médio, com foco em qualificação e entrada ou reposicionamento no mercado de trabalho.</p>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-grid"><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p><a class="button-ghost" href="contato.html">Contato demonstrativo</a></div></footer>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div>
+        <a class="button-ghost" href="contato.html">Contato demonstrativo</a>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

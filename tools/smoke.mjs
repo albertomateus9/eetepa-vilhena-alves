@@ -12,7 +12,8 @@ const required = [
   "LICENSE",
   ".github/workflows/pages.yml",
   "assets/site-icon.svg",
-  "assets/campus-tech.svg"
+  "assets/campus-tech.svg",
+  "assets/vilhena.png"
 ];
 
 for (const file of required) statSync(join(root, file));
@@ -23,8 +24,9 @@ const js = readFileSync(join(root, "script.js"), "utf8");
 if (!css.includes("@media")) throw new Error("CSS responsivo ausente");
 if (!js.includes("localStorage")) throw new Error("Tema com localStorage ausente");
 if (!js.includes("clipboard")) throw new Error("Botão de copiar endereço ausente");
+if (!js.includes("data-course-toggle")) throw new Error("Cards expansíveis de cursos ausentes");
 
-const forbidden = ["axios", "XMLHttpRequest", "WebSocket", "sendBeacon"];
+const forbidden = ["fetch(", "axios", "XMLHttpRequest", "WebSocket", "sendBeacon"];
 for (const token of forbidden) {
   if (js.includes(token)) throw new Error(`Chamada externa proibida: ${token}`);
 }
@@ -42,18 +44,34 @@ for (const page of pages) {
   }
 }
 
-const publicFiles = required.filter((file) => !file.startsWith(".github/") && file !== "LICENSE");
-const allText = publicFiles.map((file) => readFileSync(join(root, file), "utf8")).join("\n");
+const publicTextFiles = required.filter((file) => !file.startsWith(".github/") && file !== "LICENSE" && !file.endsWith(".png") && !file.endsWith(".svg"));
+const allText = publicTextFiles.map((file) => readFileSync(join(root, file), "utf8")).join("\n");
+const cursos = readFileSync(join(root, "cursos.html"), "utf8");
+const courseCount = (cursos.match(/<article class="course-card/g) || []).length;
+if (courseCount !== 14) throw new Error(`Quantidade de cursos inválida: ${courseCount}`);
+for (const course of [
+  "Técnico em Administração",
+  "Técnico em Rede de Computadores",
+  "Técnico em Ciências de Dados",
+  "Técnico em Sistemas de Energia Renováveis",
+  "Técnico em Transações Imobiliárias"
+]) {
+  if (!cursos.includes(course)) throw new Error(`Curso ausente: ${course}`);
+}
+
 const sensitive = [
   /ppl-ai-file-upload/i,
   /amazonaws/i,
   /CPF/i,
   /processamento de sinais/i,
+  /D:\\/i,
+  /Users\\alber/i,
+  /Ã|Â|â˜|â€¢|Ã¡|Ã©|Ã§|Ã£|Ãµ/,
   /\b\d{3}\.\d{3}\.\d{3}-\d{2}\b/,
   /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i
 ];
 for (const pattern of sensitive) {
-  if (pattern.test(allText)) throw new Error(`Conteúdo sensível detectado: ${pattern}`);
+  if (pattern.test(allText)) throw new Error(`Conteúdo sensível ou codificação inválida detectada: ${pattern}`);
 }
 
 console.log("smoke ok: site EETEPA Vilhena Alves validado");

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#061226" />
-    <meta name="description" content="Projetos educacionais demonstrativos para aulas de informática, redes, dados e maker na EETEPA Vilhena Alves." />
+    <meta name="description" content="Projetos educacionais demonstrativos conectados aos cursos técnicos da EETEPA Vilhena Alves." />
     <title>Projetos | EETEPA Vilhena Alves</title>
     <link rel="icon" href="assets/site-icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -12,7 +12,7 @@
   <body>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="brand" href="./"><img src="assets/site-icon.svg" alt="" /><span><strong>EETEPA Vilhena Alves</strong><span>Demo tecnológica não oficial</span></span></a>
+        <a class="brand" href="./"><span class="brand-mark"><img src="assets/vilhena.png" alt="EETEPA Vilhena Alves" /></span><span><strong>EETEPA Vilhena Alves</strong><span>Portal demonstrativo não oficial</span></span></a>
         <button class="menu-button" data-menu-button type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
         <nav class="nav-links" data-nav-links aria-label="Navegação principal">
           <a href="index.html" data-page-link>Início</a>
@@ -28,8 +28,8 @@
     <main class="section">
       <div class="container">
         <div class="section-head">
-          <div><p class="label">Vitrine aplicada</p><h1>Projetos que viram evidência</h1></div>
-          <p class="lead">Uma curadoria demonstrativa para transformar aulas em produtos digitais, protótipos e documentação pública segura.</p>
+          <div><p class="label">Vitrine aplicada</p><h1>Projetos por eixo técnico</h1></div>
+          <p class="lead">Ideias demonstrativas para transformar cursos em produtos digitais, protótipos, relatórios e experiências públicas seguras.</p>
         </div>
 
         <div class="filter-row" data-filter-group="[data-project-card]">
@@ -38,20 +38,22 @@
           <button class="filter-button" type="button" data-filter="redes">Redes</button>
           <button class="filter-button" type="button" data-filter="dados">Dados</button>
           <button class="filter-button" type="button" data-filter="maker">Maker</button>
+          <button class="filter-button" type="button" data-filter="gestao">Gestão</button>
+          <button class="filter-button" type="button" data-filter="sustentabilidade">Sustentabilidade</button>
         </div>
 
         <div class="grid section">
-          <article class="card" data-project-card data-tags="web"><span class="icon">WEB</span><h3>Site institucional estático</h3><p>HTML, CSS e JavaScript para criar páginas navegáveis, responsivas e publicáveis.</p><div class="tag-row"><span class="tag">GitHub Pages</span><span class="tag">UX</span></div></article>
-          <article class="card" data-project-card data-tags="maker web"><span class="icon">LAB</span><h3>Diário do Laboratório Maker</h3><p>Registro de desafios, protótipos, fotos autorizadas e evidências de aprendizagem.</p><div class="tag-row"><span class="tag">Maker</span><span class="tag">Portfólio</span></div></article>
-          <article class="card" data-project-card data-tags="redes"><span class="icon">NOC</span><h3>Painel de rede escolar</h3><p>Simulação de disponibilidade, latência, ativos e alertas para aulas de redes.</p><div class="tag-row"><span class="tag">Redes</span><span class="tag">Monitoramento</span></div></article>
-          <article class="card" data-project-card data-tags="dados"><span class="icon">CSV</span><h3>Observatório de dados locais</h3><p>Dados públicos e sintéticos para gráficos, leitura crítica e relatórios didáticos.</p><div class="tag-row"><span class="tag">Python</span><span class="tag">Visualização</span></div></article>
-          <article class="card" data-project-card data-tags="maker redes"><span class="icon">IoT</span><h3>Sensor didático de ambiente</h3><p>Protótipo com sensores, painel local e discussão sobre conectividade e dados.</p><div class="tag-row"><span class="tag">IoT</span><span class="tag">Robótica</span></div></article>
-          <article class="card" data-project-card data-tags="web dados"><span class="icon">IA</span><h3>Guia de IA responsável</h3><p>Material interativo sobre uso crítico de IA, privacidade, autoria e aprendizagem.</p><div class="tag-row"><span class="tag">Ética</span><span class="tag">Tecnologias emergentes</span></div></article>
+          <article class="card" data-project-card data-tags="web gestao"><span class="icon">WEB</span><h3>Portal de curso no GitHub Pages</h3><p>Site estático para apresentar um curso, publicar trabalhos e organizar evidências de aprendizagem.</p><div class="tag-row"><span class="tag">Informática</span><span class="tag">GitHub Pages</span></div></article>
+          <article class="card" data-project-card data-tags="redes maker"><span class="icon">NOC</span><h3>Painel NOC estudantil</h3><p>Simulação de disponibilidade, latência, ativos, chamados e alertas para aulas de redes.</p><div class="tag-row"><span class="tag">Redes</span><span class="tag">Infraestrutura</span></div></article>
+          <article class="card" data-project-card data-tags="dados sustentabilidade"><span class="icon">CSV</span><h3>Observatório de dados ambientais</h3><p>Dados públicos e sintéticos para analisar queimadas, energia, resíduos e indicadores locais.</p><div class="tag-row"><span class="tag">Ciências de Dados</span><span class="tag">Meio Ambiente</span></div></article>
+          <article class="card" data-project-card data-tags="maker sustentabilidade"><span class="icon">SOL</span><h3>Monitor de energia renovável</h3><p>Protótipo demonstrativo para estimar geração solar, consumo e economia em cenários didáticos.</p><div class="tag-row"><span class="tag">Energia</span><span class="tag">Maker</span></div></article>
+          <article class="card" data-project-card data-tags="gestao web"><span class="icon">ADM</span><h3>Gestão de evento escolar fictício</h3><p>Cronograma, orçamento sintético, checklists e landing page para eventos, turismo ou administração.</p><div class="tag-row"><span class="tag">Eventos</span><span class="tag">Administração</span></div></article>
+          <article class="card" data-project-card data-tags="gestao dados"><span class="icon">IMB</span><h3>Painel patrimonial demonstrativo</h3><p>Inventário fictício para condomínio, transações imobiliárias, patrimônio e manutenção.</p><div class="tag-row"><span class="tag">Gestão</span><span class="tag">Serviços</span></div></article>
         </div>
       </div>
     </main>
 
-    <footer class="site-footer"><div class="container footer-grid"><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p><a class="button-ghost" href="contato.html">Como chegar</a></div></footer>
+    <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/vilhena.png" alt="" /><p>Projeto demonstrativo não oficial inspirado na EETEPA Vilhena Alves; não representa canal institucional oficial.</p></div><a class="button-ghost" href="contato.html">Como chegar</a></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
